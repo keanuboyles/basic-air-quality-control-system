@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 Monitoring Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ESP32 Environment Monitor</h1>
+
+    <!-- Status Grid -->
+    <div class="status">
+      <div class="status-item">
+        <strong>Temperature</strong>
+        <span id="temp">-- °C</span>
+      </div>
+      <div class="status-item">
+        <strong>Humidity</strong>
+        <span id="humidity">-- %</span>
+      </div>
+      <div class="status-item">
+        <strong>Dust</strong>
+        <span id="dust">--</span>
+      </div>
+      <div class="status-item">
+        <strong>CO₂</strong>
+        <span id="co2">--</span>
+      </div>
+    </div>
+
+    <!-- Control Buttons -->
+    <div style="text-align:center;">
+      <button onclick="toggleVent('on')">Ventilation ON</button>
+      <button onclick="toggleVent('off')">Ventilation OFF</button>
+      <button onclick="toggleHumid('on')">Humidifier ON</button>
+      <button onclick="toggleHumid('off')">Humidifier OFF</button>
+    </div>
+
+    <footer>
+      ESP32 Dashboard • Powered by GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
