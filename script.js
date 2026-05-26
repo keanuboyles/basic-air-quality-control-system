@@ -1,5 +1,5 @@
 // Replace <your-server-ip> with your Flask server's local IP address (e.g., 192.168.43.X)
-const API_URL = "http://<your-server-ip>:5000/latest";
+const API_URL = "http://10.182.31.147:5000";
 
 async function updateData() {
   try {
